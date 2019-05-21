@@ -1,0 +1,113 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+      <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+      </FrameLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:orientation="horizontal"
+         android:layout_gravity="bottom"
+         android:weightSum="4"
+        >
+
+         <ImageView
+             android:id="@+id/home"
+             android:layout_width="40dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentTop="true"
+             android:layout_weight="1"
+             android:layout_marginTop="6dp"
+             android:src="@drawable/home2"
+             />
+
+         <ImageView
+             android:id="@+id/wifi"
+             android:layout_width="40dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_alignStart="@+id/textView"
+             android:layout_weight="1"
+             android:src="@drawable/home2"
+             android:text="start_service" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="51dp"
+            android:layout_toStartOf="@+id/textView4"
+            android:clickable="true"
+            android:src="@drawable/ic_action_add"
+            app:backgroundTint="@color/colorPrimary"
+            app:elevation="8dp" />
+
+         <ImageView
+             android:id="@+id/imageView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_marginStart="34dp"
+             android:layout_toEndOf="@+id/wifi"
+             app:srcCompat="@drawable/carts" />
+
+         <ImageView
+             android:id="@+id/imageView3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignEnd="@+id/textView4"
+             android:layout_alignTop="@+id/floatingActionButton"
+             app:srcCompat="@drawable/home2" />
+
+         <TextView
+             android:id="@+id/textView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/wifi"
+             android:layout_marginStart="19dp"
+             android:text="Home" />
+
+         <TextView
+             android:id="@+id/textView3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignStart="@+id/imageView2"
+             android:layout_below="@+id/imageView2"
+             android:text="Shop" />
+
+         <TextView
+             android:id="@+id/textView4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/textView5"
+             android:layout_alignBottom="@+id/textView5"
+             android:layout_marginEnd="41dp"
+             android:layout_toStartOf="@+id/textView5"
+             android:text="Blog" />
+
+         <TextView
+             android:id="@+id/textView5"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+             android:layout_below="@+id/imageView3"
+             android:layout_marginRight="6dp"
+             android:text="Port" />
+
+
+     </RelativeLayout>
+
+
+</FrameLayout>

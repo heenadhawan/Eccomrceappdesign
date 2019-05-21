@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:drawableLeft="@drawable/ic_action_dashes" >
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="85dp"
+        android:drawableLeft="@drawable/ic_action_settings"
+        android:drawablePadding="16dp"
+        android:drawableTint="#000000"
+        android:paddingLeft="15dp"
+        android:hint="App Language"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        android:textSize="20sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="10dp"
+        android:background="#D3D3D3"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/setting"/>
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_marginTop="55dp"
+        android:drawableLeft="@drawable/ic_action_notificatio"
+        android:drawablePadding="16dp"
+        android:drawableTint="#000000"
+        android:hint="Enable Notification"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textColorHint="#000000"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#D3D3D3"
+        android:layout_below="@id/mail"
+        android:id="@+id/view6" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mail"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_action_android"
+        android:drawablePadding="16dp"
+        android:drawableTint="#000000"
+        android:hint="App Version"
+        android:inputType="text"
+        android:textColorHint="#000000 "
+        android:textSize="20sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#D3D3D3"
+        android:layout_below="@id/phone"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setting"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/ic_action_rateapp"
+        android:drawablePadding="16dp"
+        android:drawableTint="#000000"
+        android:hint=" Rate App"
+        android:paddingLeft="15dp"
+        android:textColorHint="#000000"
+        android:textSize="20sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#D3D3D3"
+        android:layout_below="@id/textView7"
+        android:id="@+id/view7"
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="26dp"
+        android:drawableLeft="@drawable/ic_action_policy"
+        android:drawablePadding="16dp"
+        android:paddingLeft="15dp"
+        android:hint="Privacy Policy"
+        android:textColorHint="#000000"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#D3D3D3"
+        android:layout_below="@id/textView6"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="18dp"
+        android:drawableLeft="@drawable/ic_action_policy"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/Black"
+        android:hint=" FAQ"
+        android:paddingLeft="15dp"
+        android:textColorHint="#000000"
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view6"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"/>
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="21dp"
+        android:text="Settings"
+        android:textColor="@color/White"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="55dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/toolbar_top"
+        android:layout_alignParentStart="true"
+        android:paddingRight="15dp"
+        android:src="@drawable/ic_action_back"/>
+
+
+
+     </RelativeLayout>
+
